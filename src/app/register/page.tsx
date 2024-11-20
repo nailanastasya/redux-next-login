@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { register, selectUserStatus } from "@/redux/slices/userSlice";
 import Link from "next/link";
 import "./register.css";
+import { AppDispatch, RootState } from "@/redux/store";
 
 const Register = () => {
 

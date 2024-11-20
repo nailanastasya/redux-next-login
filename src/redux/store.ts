@@ -24,5 +24,6 @@ export const store = configureStore({
 
 // Membuat persistor untuk mengelola proses penyimpanan dan pemulihan state ke/dari storage.
 export const persistor = persistStore(store);
-
+export type AppDispatch = typeof store.dispatch; 
 export default store;
+export type RootState = ReturnType<typeof store.getState>;
